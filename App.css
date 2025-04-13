@@ -1,0 +1,183 @@
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+  background-color: #0e1217;
+  color: #d1d4dc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #171b26;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2a2e39;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2962ff;
+}
+
+.user-controls button {
+  background-color: #2962ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-controls button:hover {
+  background-color: #0039cb;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #131722;
+  border-left: 1px solid #2a2e39;
+  padding: 15px;
+}
+
+.crypto-list {
+  margin-top: 15px;
+}
+
+.crypto-item {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.crypto-item:hover {
+  background-color: #1e222d;
+}
+
+.crypto-item.selected {
+  background-color: #2a2e39;
+}
+
+.crypto-symbol {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.crypto-price {
+  font-weight: bold;
+}
+
+.positive {
+  color: #26a69a;
+}
+
+.negative {
+  color: #ef5350;
+}
+
+.chart-container {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.selected-crypto h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.crypto-price-large {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.crypto-change-large {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.timeframe-selector button {
+  background-color: #131722;
+  color: #d1d4dc;
+  border: 1px solid #2a2e39;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.timeframe-selector button.active {
+  background-color: #2962ff;
+  color: white;
+  border-color: #2962ff;
+}
+
+.chart-placeholder {
+  flex: 1;
+  background-color: #131722;
+  border: 1px solid #2a2e39;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.indicators-panel {
+  margin-top: 15px;
+}
+
+.indicators-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.indicator-item {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.analysis-panel {
+  width: 250px;
+  background-color: #131722;
+  border-right: 1px solid #2a2e39;
+  padding: 15px;
+}
+
+.analysis-item, .ai-prediction {
+  background-color: #1e222d;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.analysis-item h4, .ai-prediction h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #171b26;
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid #2a2e39;
+}
